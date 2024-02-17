@@ -19,13 +19,16 @@ class details extends StatelessWidget {
               onPressed: (){
                 Navigator.pop(context);
               },
-               icon: Icon(Icons.home)),
+               icon: Icon(Icons.home,
+               color: Colors.white,)),
 
             SizedBox(width: 20,),
-            Text(goal.goalName,
+            Text(goal.goalName.toUpperCase(),
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontFamily: 'gotham',
+              color: Colors.white,
+              
             ),),
           ],
         ),
@@ -51,7 +54,7 @@ class details extends StatelessWidget {
                 Text("About This Goal",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 30,
+                  fontSize: 20,
                   fontFamily: 'gotham',
                 ),),
             
@@ -63,7 +66,7 @@ class details extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 16,
                   fontFamily: 'gotham',
-                  fontWeight: FontWeight.w500, 
+                  
                 ),),
                 
                 SizedBox(height: 30,),
@@ -75,7 +78,7 @@ class details extends StatelessWidget {
                 Text("Related Topic",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 30,
+                  fontSize: 20,
                   fontFamily: 'gotham',
                 ),),
             
@@ -84,7 +87,7 @@ class details extends StatelessWidget {
                 Text(goal.relatedTopicsTitle,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 20,
+                  fontSize: 18,
                   fontFamily: 'gotham',
                 ),),
 
@@ -94,7 +97,7 @@ class details extends StatelessWidget {
                 style: TextStyle(
                   // fontWeight: FontWeight.bold,
                   fontSize: 16,
-                  fontWeight: FontWeight.w500,
+                 
                   fontFamily: 'gotham',
                 ),),
 

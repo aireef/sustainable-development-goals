@@ -11,16 +11,19 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white, // Background body diubah menjadi putih
+      backgroundColor: Colors.white, // warna background untuk scaffold
       appBar: AppBar(
         elevation: 0.0,
         centerTitle: false,
-        backgroundColor: Color(0xFF00ADEF), // Warna background appbar diubah menjadi biru laut
+        backgroundColor: Color(0xFF00ADEF), // warna background untuk appbar
+
+
+        //appbar text
         title: Text(
           "Sustainable Development Goals",
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 25,
+            color: Colors.white,
             fontFamily: 'gotham',
 
             
@@ -38,6 +41,9 @@ class HomeScreen extends StatelessWidget {
             itemBuilder: (context, index) {
               final SDG goal = goals[index];
               return InkWell(
+
+
+              //navigasi menuju halaman detail saat card di tap
                 onTap: () {
                   Navigator.push(
                     context,
@@ -70,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                               Text(
                                 goal.goalName,
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'gotham',
                                 ),
@@ -81,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontFamily: 'gotham',
-                                  fontWeight: FontWeight.w500, 
+                                   
                                 ),
                               ),
                             ],
