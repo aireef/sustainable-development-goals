@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:s/components/details.dart';
 import 'package:s/model/sdgs.dart';
 
+
 class HomeScreen extends StatelessWidget {
   final SDG goal;
 
@@ -17,7 +18,13 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Color(0xFF00ADEF), // Warna background appbar diubah menjadi biru laut
         title: Text(
           "Sustainable Development Goals",
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 25,
+            fontFamily: 'gotham',
+
+            
+          ),
         ),
       ),
       body: SafeArea(
@@ -65,6 +72,7 @@ class HomeScreen extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
+                                  fontFamily: 'gotham',
                                 ),
                               ),
                               SizedBox(height: 8),
@@ -72,6 +80,8 @@ class HomeScreen extends StatelessWidget {
                                 goal.briefDesc,
                                 style: TextStyle(
                                   fontSize: 16,
+                                  fontFamily: 'gotham',
+                                  fontWeight: FontWeight.w500, 
                                 ),
                               ),
                             ],

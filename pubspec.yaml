@@ -20,3 +20,15 @@ flutter:
 
   assets:
     - images/
+
+  fonts:
+    - family: gotham
+      fonts:
+        - asset: fonts/Gotham-Bold.otf
+        - asset: fonts/Gotham-Light.otf
+        - asset: fonts/Gotham-Medium.otf
+        - asset: fonts/Gotham-Thin.otf
+        - asset: fonts/Gotham-Ultra.otf
+        - asset: fonts/Gotham-XLight.otf
+        - asset: fonts/Gotham-Book.otf
+        - asset: fonts/Gotham-Black.otf

@@ -24,7 +24,8 @@ class details extends StatelessWidget {
             SizedBox(width: 20,),
             Text(goal.goalName,
             style: TextStyle(
-              fontWeight: FontWeight.bold
+              fontWeight: FontWeight.bold,
+              fontFamily: 'gotham',
             ),),
           ],
         ),
@@ -50,7 +51,8 @@ class details extends StatelessWidget {
                 Text("About This Goal",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 30
+                  fontSize: 30,
+                  fontFamily: 'gotham',
                 ),),
             
                 Text("-----------------------------------------------------"),
@@ -59,7 +61,9 @@ class details extends StatelessWidget {
 
                 Text(goal.description,
                 style: TextStyle(
-                  fontSize: 16
+                  fontSize: 16,
+                  fontFamily: 'gotham',
+                  fontWeight: FontWeight.w500, 
                 ),),
                 
                 SizedBox(height: 30,),
@@ -71,7 +75,8 @@ class details extends StatelessWidget {
                 Text("Related Topic",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 30
+                  fontSize: 30,
+                  fontFamily: 'gotham',
                 ),),
             
                 Text("-----------------------------------------------------"),
@@ -79,7 +84,8 @@ class details extends StatelessWidget {
                 Text(goal.relatedTopicsTitle,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 20
+                  fontSize: 20,
+                  fontFamily: 'gotham',
                 ),),
 
                 SizedBox(height: 20,),
@@ -87,7 +93,9 @@ class details extends StatelessWidget {
                 Text(goal.relatedTopics,
                 style: TextStyle(
                   // fontWeight: FontWeight.bold,
-                  fontSize: 16
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: 'gotham',
                 ),),
 
                 
