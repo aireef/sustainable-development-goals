@@ -1,4 +1,4 @@
 # Overview
-### making a simple ui about sustainable development goals using flutter
+###a simple flutter ui about sustainable development goals
 
  
